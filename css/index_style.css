@@ -1,0 +1,36 @@
+body{
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu {
+    text-align: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    /* background: linear-gradient(to right, #b3ffab, #12fff7); */
+    background: linear-gradient(to left, #f0f2f0, #000c40);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.menu > li > a{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}   
+
+.menu > li > a:hover{    
+    /* background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); */
+    background: linear-gradient(to right, #000c40, #302b63, #24243e);
+    color: white;
+
+}
+
+.content{
+    margin-left: 15%;
+    padding: 1px 16px;
+    height: 1000px;
+    background: #f0f2f0;
+}
