@@ -14,18 +14,46 @@ body{
     height: 100%;
     overflow: auto;
 }
-.menu > li > a{
+.menu > div > a{
     display: block;
     color: black;
     padding: 8px 16px;
     text-decoration: none;
 }   
 
-.menu > li > a:hover{    
+.menu > div > a:hover{    
     /* background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); */
     background: linear-gradient(to right, #000c40, #302b63, #24243e);
     color: white;
+}
 
+.submenu{
+    float: right;
+    overflow: hidden;
+}
+
+.submenu-content{
+    display: none;
+    position: sticky;
+    right: 0%;
+    background: linear-gradient(to right, #ef3b36, #f0f2f0);
+    width: auto;
+    z-index: 1;
+}
+
+.submenu-content > a{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.submenu-content > a:hover{
+    background: linear-gradient(to right, #c31432, #240b36);
+}
+
+.submenu:hover .submenu-content{
+    display: block;
 }
 
 .content{
