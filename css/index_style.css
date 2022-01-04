@@ -37,7 +37,7 @@ body{
     display: none;
     position: sticky;
     right: 0%;
-    background: linear-gradient(to right, #ef3b36, #f0f2f0);
+    background: linear-gradient(to right, #ee9ca7, #f0f2f0);
     width: 90%;
     z-index: 1;
 }
@@ -51,7 +51,7 @@ body{
 }
 
 .submenu-content > a:hover{
-    background: linear-gradient(to right, #ef3b36, #240b36);
+    background: linear-gradient(to right, #ee9ca7, #240b36);
     color: white;
 }
 
@@ -64,4 +64,19 @@ body{
     padding: 1px 16px;
     height: 1000px;
     background: #f0f2f0;
+}   
+
+@media only screen and (max-width: 600px){
+    .menu{
+        width: 30%;
+        font-size: 60%;
+    }
+    
+    .content{
+        margin-left: 30%;
+    }
+    
+    .submenu-content{
+        width: 80%;
+    }
 }
