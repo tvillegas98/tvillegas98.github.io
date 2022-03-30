@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
+    background-color: black;
 }
 
 .menu{
@@ -44,4 +45,12 @@ body{
     visibility: visible;
     background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
     position: absolute;
+}
+
+p{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
