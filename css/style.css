@@ -6,7 +6,7 @@ body{
 
 .menu{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     align-items: flex-end;
     background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
 }
@@ -18,16 +18,19 @@ body{
     padding: 10px; /* Es el espaciado interior */
     text-decoration: none;
     position: relative;
+    transition-duration: 0.5s;
 }
 
 .submenu a:hover{
     color: white;
+    background-color: #0f0c29;
 }
 
 .submenu a:active{
     background: linear-gradient(to top, #0f0c29, #302b63, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     box-shadow: 0px 3px #88d00b;
     transform: translateY(-2px);
+    transition-duration: 0.3s;
 }
 
 
@@ -45,6 +48,7 @@ body{
     visibility: visible;
     background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
     position: absolute;
+    transition: all 0.5s ease;
 }
 
 p{
