@@ -38,7 +38,6 @@ body{
     visibility: hidden;
     display: none;
     position: absolute;
-    transition: all 0.5s ease;
     list-style: none;
 }
 
@@ -48,12 +47,11 @@ body{
     visibility: visible;
     background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
     position: absolute;
-    transition: all 0.5s ease;
 }
 
 p{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     color: white;
