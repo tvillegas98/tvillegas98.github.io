@@ -1,6 +1,9 @@
 body{
     margin: 0px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', serif;
+    /* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, #000000, #2c3e50); */
     background-color: black;
 }
 
@@ -28,12 +31,11 @@ body{
 }
 
 .submenu a:active{
-    background: linear-gradient(to top, #0f0c29, #302b63, #24243e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top, #0f0c29, #302b63, #24243e); 
     box-shadow: 0px 3px #88d00b;
     transform: translateY(-2px);
     transition-duration: 0.3s;
 }
-
 
 .smenu{
     visibility: hidden;
