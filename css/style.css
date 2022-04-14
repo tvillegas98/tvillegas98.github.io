@@ -51,3 +51,15 @@ body{
     background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
     position: absolute;
 }
+
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: aliceblue;
+}
+
+.welcome h2{
+    color: #88d00b;
+}
