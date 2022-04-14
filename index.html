@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link rel="icon" type="image/x-icon" href="images/lambda.png" sizes="16x16">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,31 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600&family=Montserrat:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600&family=Montserrat:ital,wght@1,200;1,300&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600&family=Montserrat:ital,wght@1,200;1,300&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/helpers.js"></script>
 </head>
 <body>
-    <nav class="menu">
-        <div class="submenu">
-            <a href="#">Inicio</a>
-        </div>
-        <div class="submenu">
-            <a href="#">Matematicas</a>
-            <div class="smenu">
-                <a href="#">Análisis Matemático</a>
-                <a href="#">Álgebra Lineal</a>
-                <a href="#">Probabilidad</a>
-                <a href="#">Estadística</a>
-            </div>
-        </div>
-        <div class="submenu">
-            <a href="#">Programación</a>
-            <div class="smenu">
-                <a href="#">Estructuras de Datos</a>
-                <a href="#">Algoritmia</a>
-                <a href="#">Lenguajes de Programación</a>
-            </div>
-        </div>
-        <div class="submenu">
-            <a href="posts.html">Posts</a>
+    <nav>
+        <div class="menu">
+            <script>
+                const submenu_elements = new Map();
+                submenu_elements.set('Inicio', get_sub_menu_content(""));
+                submenu_elements.set('Matemáticas', get_sub_menu_elements_for_math_section("math.html"));
+                submenu_elements.set('Programación', get_sub_menu_elements_for_programming_section("programming.html"));
+                submenu_elements.set('Posts', get_sub_menu_content("posts.html"));
+                insert_nav_with_elements(submenu_elements);
+            </script>
         </div>
     </nav>
 </body>

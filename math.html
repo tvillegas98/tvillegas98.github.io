@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <link rel="icon" type="image/x-icon" href="images/lambda.png" sizes="16x16">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/posts_style.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/posts_style.css">
     <title>Tommy's Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,24 +15,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600&family=Montserrat:ital,wght@1,200;1,300&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/helpers.js"></script>
 </head>
+
 <body>
     <nav class="menu">
         <script>
             const submenu_elements = new Map();
             submenu_elements.set('Inicio', get_sub_menu_content("/"));
-            submenu_elements.set('Matemáticas', get_sub_menu_elements_for_math_section("math.html"));
+            submenu_elements.set('Matemáticas', get_sub_menu_elements_for_math_section(""));
             submenu_elements.set('Programación', get_sub_menu_elements_for_programming_section("programming.html"));
-            submenu_elements.set('Posts', get_sub_menu_content(""));
+            submenu_elements.set('Posts', get_sub_menu_content("posts.html"));
             insert_nav_with_elements(submenu_elements);
         </script>
     </nav>
+
     <div class="posts">
         <div class="post">
-            <a href="">Una triste historia</a>
+            <a href="">¿Qué es una Probabilidad?</a>
             <p>
-                Resumen de la triste historia
+                En este post, hablaremos sobre que es la Probabilidad de un evento.
             </p>
         </div>
     </div>
 </body>
+
 </html>
