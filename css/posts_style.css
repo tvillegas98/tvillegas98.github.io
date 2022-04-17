@@ -11,7 +11,7 @@
     background-color: black;
     border: 1px solid white;
     border-radius: 5px;
-    box-shadow: inset 0px 0px 5px 5px #0f2027, 0px 0px 5px 5px #203a43, 0px 0px 5px 5px #2c5364;
+    box-shadow: inset 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B;
     margin: 3em;
     padding: 10px; 
     transform: translateY(0px);
@@ -20,14 +20,14 @@
 }
 
 .post:hover {
-    box-shadow: inset 0px 0px 8px 8px #0f0c29, 0px 0px 8px 8px #302b63, 0px 0px 8px 8px #24243e;
+    box-shadow: inset 0px 0px 6px 6px #C996CC, 0px 0px 6px 6px #C996CC;
     transition-duration: 0.5s;
 }
 
 .post:active {
-    box-shadow: inset 0px 0px 8px 8px #0f0c29, 0px 0px 8px 8px #deffa4, 0px 0px 8px 8px #88d00b;
+    box-shadow: inset 0px 0px 8px 8px #3D2C8D, 0px 0px 8px 8px #3D2C8D, 0px 0px 8px 8px #3D2C8D;
     transform: translateY(-2px);
-    transition-duration: 0.1s;
+    transition-duration: 0.5s;
 }
 
 .post a{

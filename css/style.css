@@ -1,17 +1,25 @@
+html{
+    background-color: gray;
+}
+
 body{
     margin: 0px;
     font-family: 'Roboto Mono', monospace;
-    /* background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: linear-gradient(to bottom, #000000, #2c3e50); */
     background-color: black;
+    height: 100vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 12px 12px 12px 0 white,-12px -12px 12px 0 black;
 }
 
 .menu{
+    order: 1;
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-end;
-    background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(to left, #1C0C5B, #916BBF);
 }
 
 .submenu a{
@@ -27,14 +35,15 @@ body{
 
 .submenu a:hover{
     color: white;
-    background-color: #0f0c29;
+    background-color: #1C0C5B;
 }
 
 .submenu a:active{
-    background: linear-gradient(to top, #0f0c29, #302b63, #24243e); 
+    background: linear-gradient(to left, #3D2C8D, #1C0C5B);
     box-shadow: 0px 3px #88d00b;
     transform: translateY(-2px);
     transition-duration: 0.3s;
+
 }
 
 .smenu{
@@ -48,12 +57,14 @@ body{
     display: flex;
     flex-flow: column wrap;
     visibility: visible;
-    background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(to left, #1C0C5B, #916BBF);
     position: absolute;
+    z-index: 1;
 }
 
 
-.welcome {
+.welcome{
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
