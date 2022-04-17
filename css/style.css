@@ -1,5 +1,7 @@
 html{
-    background-color: #1C0C5B;
+    /* background-color: #1C0C5B; */
+    background-image: url("../images/background2.jpg");
+    background-size: cover;
 }
 
 body{
