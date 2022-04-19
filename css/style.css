@@ -77,21 +77,13 @@ body{
     color: #88d00b;
 }
 
-@media only screen and (max-width: 600px) {
-    .menu{
-        font-size: 50%;
-        justify-content: space-between;
-    }
-}
-
-
 .loader-wrapper {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #1C0C5B;
+    background-image: url("../images/background.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -117,4 +109,12 @@ body{
     50% { transform: rotate(180deg);}
     75% { transform: rotate(360deg);}
     100% { transform: rotate(360deg);}
+}
+
+
+@media only screen and (max-width: 600px) {
+    .menu{
+        font-size: 60%;
+        justify-content: space-between;
+    }
 }
