@@ -52,7 +52,6 @@ function get_sub_menu_elements_for_programming_section(url){
     ])
     return base_map
 }
-
 function loader(){
     document.write(`<div class="loader-wrapper">
     <span class="loader"></span></span>
