@@ -9,9 +9,9 @@
     flex-direction: column;
     align-items: center;
     background-color: black;
+    box-shadow: inset 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B;
     border: 1px solid white;
     border-radius: 5px;
-    box-shadow: inset 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B;
     margin: 3em;
     padding: 10px; 
     transform: translateY(0px);
@@ -20,8 +20,9 @@
 }
 
 .post:hover {
+    /* animation: blinker 2s ease-in infinite; */
     box-shadow: inset 0px 0px 6px 6px #C996CC, 0px 0px 6px 6px #C996CC;
-    transition-duration: 0.5s;
+    transition-duration: 1;
 }
 
 .post:active {
@@ -47,3 +48,52 @@
     color: white;
     flex-basis: auto;
 }
+
+/* @keyframes blinker {
+    0%{
+        box-shadow: inset 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B; 
+    }
+    2%{
+        box-shadow: inset 0px 0px 6px 6px #C996CC, 0px 0px 6px 6px #C996CC;
+    }
+    4%{
+        box-shadow: inset 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B; 
+    }
+    6%{
+        box-shadow: inset 0px 0px 6px 6px #C996CC, 0px 0px 6px 6px #C996CC;
+    }
+    8%{
+        box-shadow: inset 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B;
+    }
+    9% {
+        box-shadow: inset 0px 0px 6px 6px #C996CC, 0px 0px 6px 6px #C996CC;
+    }
+    10%{
+        box-shadow: inset 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B;
+    }
+  
+    20% {
+        box-shadow: inset 0px 0px 6px 6px #C996CC, 0px 0px 6px 6px #C996CC;
+    }
+    90%{
+        box-shadow: inset 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B; 
+    }
+    92%{
+        box-shadow: inset 0px 0px 6px 6px #C996CC, 0px 0px 6px 6px #C996CC;
+    }
+    94%{
+        box-shadow: inset 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B; 
+    }
+    96%{
+        box-shadow: inset 0px 0px 6px 6px #C996CC, 0px 0px 6px 6px #C996CC;
+    }
+    98%{
+        box-shadow: inset 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B;
+    }
+    99% {
+        box-shadow: inset 0px 0px 6px 6px #C996CC, 0px 0px 6px 6px #C996CC;
+    }
+    100%{
+        box-shadow: inset 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B, 0px 0px 5px 5px #1C0C5B;
+    }
+} */
