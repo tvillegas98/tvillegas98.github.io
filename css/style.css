@@ -1,5 +1,4 @@
 html{
-    /* background-color: #1C0C5B; */
     background-image: url("../images/background.jpg");
     background-size: cover;
 }
@@ -8,21 +7,22 @@ body{
     margin: 0px;
     font-family: 'Roboto Mono', monospace;
     background-color: black;
-    height: 100vh;
+    min-height: 100vh;
     margin-left: 10%;
     margin-right: 10%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: -12px 12px 12px rgba(0,0,0,0.5), 12px -12px 12px rgba(0,0,0,0.5); 
+    box-shadow: 0px 13px 15px 11px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 13px 15px 11px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 13px 15px 11px rgba(0,0,0,0.5);
 } 
-
 
 .menu{
     order: 1;
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-end;
-    background: linear-gradient(to left, #1C0C5B, #916BBF);
+    background: #2B20BC;
 }
 
 .submenu a{
@@ -33,20 +33,16 @@ body{
     text-decoration: none;
     position: relative;
     transform: translateY(0px);
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
 }
 
 .submenu a:hover{
-    color: white;
     background-color: #1C0C5B;
+    transition-duration: 0.5s;
 }
 
 .submenu a:active{
-    background: linear-gradient(to left, #3D2C8D, #1C0C5B);
-    box-shadow: 0px 3px #88d00b;
-    transform: translateY(-2px);
-    transition-duration: 0.3s;
-
+    transition-duration: 0.5s;
 }
 
 .smenu{
@@ -60,21 +56,46 @@ body{
     display: flex;
     flex-flow: column wrap;
     visibility: visible;
-    background: linear-gradient(to left, #1C0C5B, #916BBF);
+    background: linear-gradient(to bottom, #2B20BC 50%, #A01CA3);
     position: absolute;
     z-index: 1;
 }
 
 
-.welcome{
+.windows{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 80%;
     display: flex;
-    margin-left: 5%;
-    flex-flow: column wrap;
+    margin-left: 2em;
+    flex-flow: row;
+    align-items: stretch;
     color: aliceblue;
 }
 
-.welcome h2{
-    color: #88d00b;
+.window{
+    margin-top: 2em;
+    background-color: #FFCC33;
+    margin-right: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.479);
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.685) inset, 0px 0px 5px 3px rgba(255, 255, 255, 0.685);
+}
+
+.window h2{
+    color: black;
+}
+
+.lights-off-window{
+    margin-top: 2em;
+    margin-right: 5%;
+    color: black;
+    transition: 0.5s;
+}
+
+.lights-off-window:hover{
+    background-color: #FFCC33;
+    border: 1px solid rgba(255, 255, 255, 0.479);
+    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.685) inset, 0px 0px 5px 3px rgba(255, 255, 255, 0.685);
+    transition: 0.5s;
 }
 
 .loader-wrapper {
@@ -110,8 +131,6 @@ body{
     75% { transform: rotate(360deg);}
     100% { transform: rotate(360deg);}
 }
-
-
 @media only screen and (max-width: 600px) {
     .menu{
         font-size: 60%;
