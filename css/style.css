@@ -6,7 +6,7 @@ html{
 body{
     margin: 0px;
     font-family: 'Roboto Mono', monospace;
-    background-color: black;
+    background-color: rgba(18,23,55,255); 
     min-height: 100vh;
     margin-left: 10%;
     margin-right: 10%;
@@ -35,7 +35,10 @@ body{
     transform: translateY(0px);
     transition-duration: 0.5s;
 }
-
+.submenu a img {
+    width: 48px;
+    height: 21px;
+}
 .submenu a:hover{
     background-color: #1C0C5B;
     transition-duration: 0.5s;
@@ -56,46 +59,9 @@ body{
     display: flex;
     flex-flow: column wrap;
     visibility: visible;
-    background: linear-gradient(to bottom, #2B20BC 50%, #A01CA3);
+    background: linear-gradient(to bottom, #2B20BC 70%, #700372);
     position: absolute;
     z-index: 1;
-}
-
-
-.windows{
-    font-family: 'Roboto Mono', monospace;
-    font-size: 80%;
-    display: flex;
-    margin-left: 2em;
-    flex-flow: row;
-    align-items: stretch;
-    color: aliceblue;
-}
-
-.window{
-    margin-top: 2em;
-    background-color: #FFCC33;
-    margin-right: 5%;
-    border: 1px solid rgba(255, 255, 255, 0.479);
-    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.685) inset, 0px 0px 5px 3px rgba(255, 255, 255, 0.685);
-}
-
-.window h2{
-    color: black;
-}
-
-.lights-off-window{
-    margin-top: 2em;
-    margin-right: 5%;
-    color: black;
-    transition: 0.5s;
-}
-
-.lights-off-window:hover{
-    background-color: #FFCC33;
-    border: 1px solid rgba(255, 255, 255, 0.479);
-    box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.685) inset, 0px 0px 5px 3px rgba(255, 255, 255, 0.685);
-    transition: 0.5s;
 }
 
 .loader-wrapper {
@@ -122,6 +88,41 @@ body{
     border-top-color: #916BBF;
     border-bottom-color: #916BBF;
     animation: loader 2s infinite ease;
+}
+
+.windows{
+    display: grid;
+    grid-template-rows: repeat(2, 0.3fr);
+    grid-template-columns: repeat(5, 0.2fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 5rem;
+    margin: 1em;
+    padding: 1.5em;
+}
+.windows div{
+    border: 4px outset #ffffff;
+    font-family: arial;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #fde2b3 ,#f020aa, #FA1085);
+    font-size: 2rem;
+}
+
+.window{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.window-left{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.window-right{
+    grid-column-start: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 @keyframes loader {

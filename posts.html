@@ -20,22 +20,20 @@
     <script> loader() </script>
     
     <nav class="menu">
-        <script>
-            const submenu_elements = new Map();
-            submenu_elements.set('Inicio', get_sub_menu_content("/"));
-            submenu_elements.set('Matemáticas', get_sub_menu_elements_for_math_section("math.html"));
-            submenu_elements.set('Programación', get_sub_menu_elements_for_programming_section("programming.html"));
-            submenu_elements.set('Posts', get_sub_menu_content(""));
-            insert_nav_with_elements(submenu_elements);
-        </script>
+        <div class="submenu">
+            <a href="/"><img src="images/home-64.png"></a>
+        </div>
+        <div class="submenu">
+            <a href="">Posts</a>
+        </div>
     </nav>
     <div class="posts">
-        <div class="post">
-            <a href="">Una triste historia</a>
-            <p>
-                Resumen de la triste historia
-            </p>
-        </div>
+            <div class="post">
+                <a href="">Una triste historia</a>
+                <p>
+                    Resumen de la triste historia
+                </p>
+            </div>
     </div>
 </body>
 </html>

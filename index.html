@@ -16,33 +16,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <script> loader() </script>
-    
-    <nav>
-        <div class="menu">
-            <script>
-                const submenu_elements = new Map();
-                submenu_elements.set('Inicio', get_sub_menu_content(""));
-                submenu_elements.set('Matemáticas', get_sub_menu_elements_for_math_section("math.html"));
-                submenu_elements.set('Programación', get_sub_menu_elements_for_programming_section("programming.html"));
-                submenu_elements.set('Posts', get_sub_menu_content("posts.html"));
-                insert_nav_with_elements(submenu_elements);
-            </script>
+    <script> loader()</script>
+    <nav class="menu">
+        <div class="submenu">
+            <a href="#"><img src="images/home-64.png"></a>
+        </div>
+        <div class="submenu">
+            <a href="posts.html">Posts</a>
         </div>
     </nav>
-
     <div class="windows">
-        <div class="window">
-            <h2>
-                Work in Progress
-            </h2>
-        </div>
-        <div class="lights-off-window">
-            <h2>
-                At least, until I decide what to do with this
-            </h2>
-        </div>
+        <div class="window"></div>
+        <div class="window"></div>
+        <div class="window"></div>
+        <div class="window"></div>
+        <div class="window"></div>
     </div>
-
 </body>
 </html>
