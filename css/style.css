@@ -81,8 +81,19 @@ body{
 
 .content{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 5%;
 }
+
+.content h2{
+    color: #916BBF;
+}
+
+.content p{
+    color: white;
+}
+
 
 @keyframes loader {
     0% { transform: rotate(0deg);}
