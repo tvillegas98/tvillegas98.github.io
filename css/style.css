@@ -1,25 +1,19 @@
 html{
-    background-image: url("../images/background.jpg");
-    background-size: cover;
+    overflow: hidden;
 }
 
 body{
     margin: 0px;
     font-family: 'Roboto Mono', monospace;
-    background-color: rgba(18,23,55,255); 
-    min-height: 100vh;
-    margin-left: 10%;
-    margin-right: 10%;
-    box-shadow: 0px 13px 15px 11px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0px 13px 15px 11px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 13px 15px 11px rgba(0,0,0,0.5);
-} 
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+}
 
 .title{
     display: flex;
     justify-content: center;
     color: white;
-    background:  #FA1085;
+    background: #2B20BC;
 }
 
 .title h2{
@@ -31,7 +25,7 @@ body{
 .menu{
     display: flex;
     margin: 0px;
-    background: #2B20BC;
+    background:  #e200f7b2;
 }
 
 .submenu{
@@ -49,7 +43,8 @@ body{
 }
 
 .submenu a:hover{
-    background-color: #1C0C5B;
+    background-color: #2B20BC;
+    
     transition-duration: 0.5s;
 }
 
@@ -79,21 +74,29 @@ body{
     animation: loader 2s infinite ease;
 }
 
-.content{
+.body-content{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 5%;
+    margin-right: 5%;
+    
 }
 
-.content h2{
-    color: #916BBF;
+.div-content{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(21, 19, 71);
+    box-shadow: 0px 13px 15px 11px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 13px 15px 11px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 13px 15px 11px rgba(0,0,0,0.5);
+    height: 100vh;
 }
 
-.content p{
+.div-content h3{
+    margin-left: 10%;
     color: white;
 }
-
 
 @keyframes loader {
     0% { transform: rotate(0deg);}
@@ -101,9 +104,4 @@ body{
     50% { transform: rotate(180deg);}
     75% { transform: rotate(360deg);}
     100% { transform: rotate(360deg);}
-}
-@media only screen and (max-width: 600px) {
-    .menu{
-        font-size: 60%;
-    }
 }
